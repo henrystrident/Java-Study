@@ -4,6 +4,7 @@ import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
 /** 难度：★☆☆。在升序数组中返回 target 的第一个下标，无则返回 -1。 */
+// 完成状态：未完成
 public class BinarySearchExercise {
     public static int firstIndexOf(int[] numbers, int target) {
         // TODO：普通二分找到相等值后不要停止，继续向左收缩。
@@ -20,4 +21,3 @@ public class BinarySearchExercise {
 
     public static void main(String[] args) { Todo.run("二分查找", BinarySearchExercise::tests); }
 }
-

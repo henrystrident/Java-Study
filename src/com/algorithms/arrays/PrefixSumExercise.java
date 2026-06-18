@@ -4,6 +4,7 @@ import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
 /** 难度：★☆☆。构建一次后，区间和查询应为 O(1)。 */
+// 完成状态：未完成
 public class PrefixSumExercise {
     private final long[] prefix;
 
@@ -27,4 +28,3 @@ public class PrefixSumExercise {
 
     public static void main(String[] args) { Todo.run("前缀和", PrefixSumExercise::tests); }
 }
-

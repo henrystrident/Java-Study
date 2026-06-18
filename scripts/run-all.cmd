@@ -12,7 +12,10 @@ for /r "%~dp0..\src" %%F in (*Exercise.java) do (
   echo.
   echo === %%~nF ===
   java -cp "%~dp0..\out" !CLASS!
-  if !errorlevel! equ 0 set /a PASSED+=1
+  if !errorlevel! equ 0 (
+    set /a PASSED+=1
+    powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0mark-completed.ps1" -Source "%%~fF"
+  )
 )
 echo.
 echo Passed !PASSED! / !TOTAL! exercises.

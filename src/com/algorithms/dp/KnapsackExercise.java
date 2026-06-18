@@ -4,6 +4,7 @@ import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
 /** 难度：★★☆。0/1 背包：每件物品最多选择一次。 */
+// 完成状态：未完成
 public class KnapsackExercise {
     public static int maxValue(int[] weights, int[] values, int capacity) {
         // TODO：校验数组等长和非负容量；使用一维 dp，容量倒序更新。
@@ -19,4 +20,3 @@ public class KnapsackExercise {
 
     public static void main(String[] args) { Todo.run("0/1 背包", KnapsackExercise::tests); }
 }
-

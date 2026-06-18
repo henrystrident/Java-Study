@@ -4,6 +4,7 @@ import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
 /** 难度：★★★。prerequisites[i]={course, prerequisite}，返回一种合法顺序；有环返回空数组。 */
+// 完成状态：未完成
 public class CourseScheduleExercise {
     public static int[] findOrder(int courseCount, int[][] prerequisites) {
         // TODO：构建 prerequisite -> course 邻接表及入度数组，执行 Kahn 拓扑排序。

@@ -7,4 +7,8 @@ if (-not $source) { throw "找不到练习：$Exercise" }
 $relative = $source.FullName.Substring((Join-Path $root "src").Length + 1)
 $className = $relative.Replace("\", ".").Replace("/", ".").Replace(".java", "")
 java -cp (Join-Path $root "out") $className
-
+$runExit = $LASTEXITCODE
+if ($runExit -eq 0) {
+    & (Join-Path $PSScriptRoot "mark-completed.ps1") -Source $source.FullName
+}
+exit $runExit

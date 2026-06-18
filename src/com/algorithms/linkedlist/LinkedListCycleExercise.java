@@ -4,6 +4,7 @@ import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
 /** 难度：★★☆。Floyd 快慢指针检测环。 */
+// 完成状态：未完成
 public class LinkedListCycleExercise {
     static final class Node { int value; Node next; Node(int value) { this.value = value; } }
 
@@ -24,4 +25,3 @@ public class LinkedListCycleExercise {
 
     public static void main(String[] args) { Todo.run("链表环检测", LinkedListCycleExercise::tests); }
 }
-

@@ -2,19 +2,21 @@
 
 这是一个面向 Java 17 的渐进式练习项目。它不依赖第三方库：每道题都是一个可编译、可运行、带自测用例的 Java 文件。
 
-## 课程路线
+## 课程地图：讲义和代码在哪里
 
-| 阶段 | 模块 | 重点 | 练习 |
+每一行就是一个学习单元。先打开“讲义”，再进入“源码目录”完成练习；类名与 `.java` 文件名相同。
+
+| 模块 | 讲义 | 源码目录 | 练习文件 |
 |---|---|---|---|
-| 1 | 复杂度与数组 | Big-O、双指针、前缀和 | `TwoSumSortedExercise`、`PrefixSumExercise` |
-| 2 | 链表 | 指针操作、快慢指针 | `SinglyLinkedListExercise`、`LinkedListCycleExercise` |
-| 3 | 栈、队列、哈希 | LIFO/FIFO、哈希思想 | `ValidParenthesesExercise`、`LruCacheExercise` |
-| 4 | 查找与排序 | 二分、归并、快排 | `BinarySearchExercise`、`MergeSortExercise` |
-| 5 | 树与堆 | 遍历、BST、优先队列 | `BinaryTreeExercise`、`TopKExercise` |
-| 6 | 图 | BFS、DFS、拓扑排序、最短路 | `GraphTraversalExercise`、`DijkstraExercise` |
-| 7 | 递归、回溯、贪心 | 搜索树、剪枝、局部最优 | `PermutationsExercise`、`IntervalSchedulingExercise` |
-| 8 | 动态规划 | 状态、转移、边界、空间优化 | `KnapsackExercise`、`LongestCommonSubsequenceExercise` |
-| 9 | 综合挑战 | 多种结构与算法组合 | `CourseScheduleExercise` |
+| 1. 复杂度与数组 | [01-complexity-arrays.md](docs/01-complexity-arrays.md) | `src/com/algorithms/arrays/` | `TwoSumSortedExercise.java`、`PrefixSumExercise.java` |
+| 2. 链表、栈与队列 | [02-linked-list-stack-queue.md](docs/02-linked-list-stack-queue.md) | `src/com/algorithms/linkedlist/`、`src/com/algorithms/stackqueue/` | `SinglyLinkedListExercise.java`、`LinkedListCycleExercise.java`、`ValidParenthesesExercise.java` |
+| 3. 哈希与缓存 | [03-hashing.md](docs/03-hashing.md) | `src/com/algorithms/hashing/` | `LruCacheExercise.java` |
+| 4. 查找与排序 | [04-searching-sorting.md](docs/04-searching-sorting.md) | `src/com/algorithms/sorting/` | `BinarySearchExercise.java`、`MergeSortExercise.java` |
+| 5. 树与堆 | [05-trees-heaps.md](docs/05-trees-heaps.md) | `src/com/algorithms/trees/`、`src/com/algorithms/heaps/` | `BinaryTreeExercise.java`、`TopKExercise.java` |
+| 6. 图 | [06-graphs.md](docs/06-graphs.md) | `src/com/algorithms/graphs/` | `GraphTraversalExercise.java`、`DijkstraExercise.java` |
+| 7. 递归、回溯与贪心 | [07-recursion-backtracking-greedy.md](docs/07-recursion-backtracking-greedy.md) | `src/com/algorithms/backtracking/`、`src/com/algorithms/greedy/` | `PermutationsExercise.java`、`IntervalSchedulingExercise.java` |
+| 8. 动态规划 | [08-dynamic-programming.md](docs/08-dynamic-programming.md) | `src/com/algorithms/dp/` | `KnapsackExercise.java`、`LongestCommonSubsequenceExercise.java` |
+| 9. 综合挑战 | [09-comprehensive.md](docs/09-comprehensive.md) | `src/com/algorithms/challenge/` | `CourseScheduleExercise.java` |
 
 详细顺序和检查点见 [学习路线](docs/00-study-guide.md)。
 
@@ -50,13 +52,19 @@ java -cp out com.algorithms.sorting.BinarySearchExercise
 4. 补充边界测试：空输入、单元素、重复元素、极值。
 5. 在方法注释中写出时间、空间复杂度，再进入下一题。
 
+每个练习文件的类声明上方都有 `// 完成状态：未完成` 标记。使用 `run.cmd`、`run.ps1`、`run-all.cmd` 或 `run-all.ps1` 运行时，只要该练习的全部自测通过，脚本就会自动将它更新为 `// 完成状态：已完成`；TODO 或测试失败不会被标记为完成。
+
+每篇模块讲义的标题下方也会显示模块状态和练习进度表。运行脚本后，表格中对应 Java 文件的状态以及模块总进度都会自动同步；只有全部练习都通过时，模块才标记为“已完成”。
+
 所有练习初始状态均可编译。未实现的方法会调用 `Todo.notImplemented()`；完成方法时删掉这一行并写入实现。
 
 ## 项目结构
 
 ```text
-docs/       分模块讲义
-src/        可运行的 Java 练习
+docs/       按 01～09 编号排列的分模块讲义
+src/com/algorithms/
+  arrays/、linkedlist/、graphs/ ...  按算法主题分类的 Java 练习
+  support/                           自测与 TODO 辅助代码，不是练习
 scripts/    编译和运行脚本
 out/        编译产物（执行脚本后生成）
 ```

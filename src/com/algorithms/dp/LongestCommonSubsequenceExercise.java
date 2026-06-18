@@ -4,6 +4,7 @@ import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
 /** 难度：★★★。求两个字符串最长公共子序列的长度（不要求连续）。 */
+// 完成状态：未完成
 public class LongestCommonSubsequenceExercise {
     public static int length(String first, String second) {
         // TODO：dp[i][j] 表示 first 前 i 个与 second 前 j 个字符的答案。
@@ -20,4 +21,3 @@ public class LongestCommonSubsequenceExercise {
 
     public static void main(String[] args) { Todo.run("最长公共子序列", LongestCommonSubsequenceExercise::tests); }
 }
-

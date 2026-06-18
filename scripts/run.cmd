@@ -15,3 +15,8 @@ set "CLASS=%SOURCE:*\src\=%"
 set "CLASS=%CLASS:\=.%"
 set "CLASS=%CLASS:.java=%"
 java -cp "%~dp0..\out" %CLASS%
+set "RUN_EXIT=%ERRORLEVEL%"
+if "%RUN_EXIT%"=="0" (
+  powershell -NoProfile -ExecutionPolicy Bypass -File "%~dp0mark-completed.ps1" -Source "%SOURCE%" || exit /b 1
+)
+exit /b %RUN_EXIT%

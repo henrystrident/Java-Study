@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /** 难度：★★☆。完成递归中序遍历与按层遍历。 */
+// 完成状态：未完成
 public class BinaryTreeExercise {
     public static final class Node {
         public int value; public Node left; public Node right;
@@ -38,4 +39,3 @@ public class BinaryTreeExercise {
 
     public static void main(String[] args) { Todo.run("二叉树遍历", BinaryTreeExercise::tests); }
 }
-

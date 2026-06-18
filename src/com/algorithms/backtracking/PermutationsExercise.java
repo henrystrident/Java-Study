@@ -5,6 +5,7 @@ import com.algorithms.support.Todo;
 import java.util.List;
 
 /** 难度：★★☆。输入元素互不相同，返回所有排列。 */
+// 完成状态：未完成
 public class PermutationsExercise {
     public static List<List<Integer>> generate(int[] numbers) {
         // TODO：创建结果、路径和 used 数组，调用回溯方法。
@@ -28,4 +29,3 @@ public class PermutationsExercise {
 
     public static void main(String[] args) { Todo.run("全排列", PermutationsExercise::tests); }
 }
-

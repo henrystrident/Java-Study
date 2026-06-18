@@ -4,6 +4,7 @@ import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
 /** 难度：★☆☆。只允许 ()[]{} 六种字符。 */
+// 完成状态：未完成
 public class ValidParenthesesExercise {
     public static boolean isValid(String text) {
         // TODO：用 ArrayDeque<Character> 保存尚未匹配的左括号。
@@ -21,4 +22,3 @@ public class ValidParenthesesExercise {
 
     public static void main(String[] args) { Todo.run("有效括号", ValidParenthesesExercise::tests); }
 }
-

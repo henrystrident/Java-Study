@@ -4,6 +4,7 @@ import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
 /** 难度：★★☆。实现泛型单链表并维护 size 不变量。 */
+// 完成状态：未完成
 public class SinglyLinkedListExercise<E> {
     private Node<E> head;
     private int size;
@@ -59,4 +60,3 @@ public class SinglyLinkedListExercise<E> {
 
     public static void main(String[] args) { Todo.run("单链表", SinglyLinkedListExercise::tests); }
 }
-

@@ -5,6 +5,7 @@ import com.algorithms.support.Todo;
 import java.util.List;
 
 /** 难度：★★☆。选择数量最多的互不重叠半开区间 [start,end)。 */
+// 完成状态：未完成
 public class IntervalSchedulingExercise {
     public record Interval(int start, int end) {
         public Interval { if (end < start) throw new IllegalArgumentException("结束不能早于开始"); }
@@ -26,4 +27,3 @@ public class IntervalSchedulingExercise {
 
     public static void main(String[] args) { Todo.run("区间调度", IntervalSchedulingExercise::tests); }
 }
-

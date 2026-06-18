@@ -6,6 +6,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /** 难度：★★★。哈希表 + 双向链表实现固定容量 LRU，get/put 均为 O(1)。 */
+// 完成状态：未完成
 public class LruCacheExercise<K, V> {
     private final int capacity;
     private final Map<K, Node<K, V>> index = new HashMap<>();
@@ -52,4 +53,3 @@ public class LruCacheExercise<K, V> {
 
     public static void main(String[] args) { Todo.run("LRU 缓存", LruCacheExercise::tests); }
 }
-

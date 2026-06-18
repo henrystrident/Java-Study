@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /** 难度：★★☆。邻接表上的 BFS；邻居按列表中的原顺序访问。 */
+// 完成状态：未完成
 public class GraphTraversalExercise {
     public static List<Integer> bfs(List<List<Integer>> graph, int start) {
         // TODO：校验 start，用队列遍历；节点入队时立刻标记 visited。
@@ -32,4 +33,3 @@ public class GraphTraversalExercise {
 
     public static void main(String[] args) { Todo.run("图的 BFS", GraphTraversalExercise::tests); }
 }
-

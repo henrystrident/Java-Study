@@ -4,6 +4,7 @@ import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
 /** 难度：★★☆。原地修改输入数组，使用一个共享临时数组。 */
+// 完成状态：未完成
 public class MergeSortExercise {
     public static void sort(int[] numbers) {
         // TODO：创建一次临时数组并调用递归方法。

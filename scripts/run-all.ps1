@@ -8,7 +8,9 @@ foreach ($source in $exercises) {
     $className = $relative.Replace("\", ".").Replace("/", ".").Replace(".java", "")
     Write-Host "`n=== $($source.BaseName) ===" -ForegroundColor Cyan
     java -cp (Join-Path $root "out") $className
-    if ($LASTEXITCODE -eq 0) { $passed++ }
+    if ($LASTEXITCODE -eq 0) {
+        $passed++
+        & (Join-Path $PSScriptRoot "mark-completed.ps1") -Source $source.FullName
+    }
 }
 Write-Host "`n已通过 $passed / $($exercises.Count) 个练习"
-

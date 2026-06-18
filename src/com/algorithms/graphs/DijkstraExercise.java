@@ -5,6 +5,7 @@ import com.algorithms.support.Todo;
 import java.util.List;
 
 /** 难度：★★★。非负权有向图的单源最短路；不可达距离为 Long.MAX_VALUE。 */
+// 完成状态：未完成
 public class DijkstraExercise {
     public record Edge(int to, int weight) {
         public Edge { if (weight < 0) throw new IllegalArgumentException("Dijkstra 不允许负权边"); }
@@ -29,4 +30,3 @@ public class DijkstraExercise {
 
     public static void main(String[] args) { Todo.run("Dijkstra", DijkstraExercise::tests); }
 }
-
