@@ -1,0 +1,32 @@
+package com.algorithms.sorting;
+
+import com.algorithms.support.Checks;
+import com.algorithms.support.Todo;
+
+/** 难度：★★☆。原地修改输入数组，使用一个共享临时数组。 */
+public class MergeSortExercise {
+    public static void sort(int[] numbers) {
+        // TODO：创建一次临时数组并调用递归方法。
+        Todo.notImplemented("长度小于 2 时无需处理");
+    }
+
+    private static void sort(int[] a, int[] temp, int left, int right) {
+        // TODO：拆成两半，分别排序后合并。
+        Todo.notImplemented("递归出口是 left >= right");
+    }
+
+    private static void merge(int[] a, int[] temp, int left, int middle, int right) {
+        // TODO：用两个指针合并 [left,middle] 与 [middle+1,right]。
+        Todo.notImplemented("相等时优先取左侧可保持稳定性");
+    }
+
+    private static void tests() {
+        int[] a = {5, 1, 4, 2, 8, 2}; sort(a);
+        Checks.arrayEquals(new int[]{1, 2, 2, 4, 5, 8}, a);
+        int[] b = {}; sort(b); Checks.arrayEquals(new int[]{}, b);
+        int[] c = {-1}; sort(c); Checks.arrayEquals(new int[]{-1}, c);
+        Checks.passed("归并排序");
+    }
+
+    public static void main(String[] args) { Todo.run("归并排序", MergeSortExercise::tests); }
+}
