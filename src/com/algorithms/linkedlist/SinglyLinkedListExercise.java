@@ -3,7 +3,11 @@ package com.algorithms.linkedlist;
 import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
-/** 难度：★★☆。实现泛型单链表并维护 size 不变量。 */
+/**
+ * 题目：实现一个泛型单链表，完成头插、尾插、删除头节点、原地反转和查询元素数量。
+ * 规则：空链表执行 removeFirst 时抛出 IllegalStateException；每次增删后 size 必须准确。
+ * 要求：addFirst 和 removeFirst 为 O(1)，reverse 为 O(n)，反转时不得创建新链表。难度：★★☆。
+ */
 // 完成状态：未完成
 public class SinglyLinkedListExercise<E> {
     private Node<E> head;

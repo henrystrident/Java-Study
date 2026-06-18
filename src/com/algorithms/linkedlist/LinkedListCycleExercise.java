@@ -3,7 +3,11 @@ package com.algorithms.linkedlist;
 import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
-/** 难度：★★☆。Floyd 快慢指针检测环。 */
+/**
+ * 题目：给定单链表头节点 head，判断沿 next 指针前进时是否会进入环。
+ * 输出：存在环返回 true，无环或 head 为 null 返回 false。
+ * 要求：使用 Floyd 快慢指针，时间复杂度 O(n)，额外空间复杂度 O(1)。难度：★★☆。
+ */
 // 完成状态：未完成
 public class LinkedListCycleExercise {
     static final class Node { int value; Node next; Node(int value) { this.value = value; } }

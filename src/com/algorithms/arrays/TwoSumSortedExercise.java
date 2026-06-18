@@ -3,7 +3,11 @@ package com.algorithms.arrays;
 import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
-/** 难度：★☆☆。返回两个数的下标；无解返回 {-1, -1}。 */
+/**
+ * 题目：给定一个升序整数数组 numbers 和目标值 target，找出两个不同位置的元素，使它们的和等于 target。
+ * 输出：返回这两个元素的下标 {left, right}；不存在满足条件的组合时返回 {-1, -1}。
+ * 要求：使用左右双指针，时间复杂度 O(n)，额外空间复杂度 O(1)。难度：★☆☆。
+ */
 // 完成状态：已完成
 public class TwoSumSortedExercise {
     public static int[] find(int[] numbers, int target) {

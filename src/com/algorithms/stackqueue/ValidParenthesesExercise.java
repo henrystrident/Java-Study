@@ -3,7 +3,11 @@ package com.algorithms.stackqueue;
 import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
-/** 难度：★☆☆。只允许 ()[]{} 六种字符。 */
+/**
+ * 题目：给定一个只包含 ()[]{} 六种字符的字符串，判断所有括号是否类型匹配且闭合顺序正确。
+ * 输出：合法返回 true，否则返回 false；空字符串视为合法。
+ * 要求：使用栈完成一次扫描，时间复杂度 O(n)，额外空间复杂度 O(n)。难度：★☆☆。
+ */
 // 完成状态：未完成
 public class ValidParenthesesExercise {
     public static boolean isValid(String text) {

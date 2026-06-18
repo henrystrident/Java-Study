@@ -4,7 +4,11 @@ import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 import java.util.List;
 
-/** 难度：★★★。非负权有向图的单源最短路；不可达距离为 Long.MAX_VALUE。 */
+/**
+ * 题目：给定非负权有向图 graph 和源点 source，计算源点到每个节点的最短路径长度。
+ * 输出：返回距离数组；源点距离为 0，不可达节点为 Long.MAX_VALUE；负权边非法。
+ * 要求：使用邻接表和优先队列实现 Dijkstra 算法。难度：★★★。
+ */
 // 完成状态：未完成
 public class DijkstraExercise {
     public record Edge(int to, int weight) {

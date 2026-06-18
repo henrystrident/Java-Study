@@ -3,7 +3,11 @@ package com.algorithms.sorting;
 import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
-/** 难度：★★☆。原地修改输入数组，使用一个共享临时数组。 */
+/**
+ * 题目：使用归并排序将整数数组 numbers 按非降序排列，结果直接写回原数组。
+ * 规则：正确处理空数组、单元素、负数与重复元素；相等时优先取左半区元素以保持稳定性。
+ * 要求：时间复杂度 O(n log n)，只创建一个 O(n) 临时数组并在递归中共享。难度：★★☆。
+ */
 // 完成状态：未完成
 public class MergeSortExercise {
     public static void sort(int[] numbers) {

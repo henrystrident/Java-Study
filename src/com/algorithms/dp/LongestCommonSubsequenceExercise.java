@@ -3,7 +3,11 @@ package com.algorithms.dp;
 import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
-/** 难度：★★★。求两个字符串最长公共子序列的长度（不要求连续）。 */
+/**
+ * 题目：给定字符串 first 和 second，求它们最长公共子序列的长度；子序列字符顺序不变但不要求连续。
+ * 输出：返回最大长度；任一字符串为空时返回 0。
+ * 要求：定义二维动态规划状态并正确处理首行、首列边界，时间复杂度 O(mn)。难度：★★★。
+ */
 // 完成状态：未完成
 public class LongestCommonSubsequenceExercise {
     public static int length(String first, String second) {

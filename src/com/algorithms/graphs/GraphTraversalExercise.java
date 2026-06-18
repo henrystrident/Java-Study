@@ -5,7 +5,11 @@ import com.algorithms.support.Todo;
 import java.util.ArrayList;
 import java.util.List;
 
-/** 难度：★★☆。邻接表上的 BFS；邻居按列表中的原顺序访问。 */
+/**
+ * 题目：给定图的邻接表 graph 和起点 start，使用广度优先搜索返回从起点可达节点的访问顺序。
+ * 规则：邻居按邻接表中的原顺序访问；不可达节点不出现在结果中；start 非法时抛出 IllegalArgumentException。
+ * 要求：节点入队时标记，时间复杂度 O(V + E)，额外空间 O(V)。难度：★★☆。
+ */
 // 完成状态：未完成
 public class GraphTraversalExercise {
     public static List<Integer> bfs(List<List<Integer>> graph, int start) {

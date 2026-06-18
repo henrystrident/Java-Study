@@ -3,7 +3,11 @@ package com.algorithms.challenge;
 import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
-/** 难度：★★★。prerequisites[i]={course, prerequisite}，返回一种合法顺序；有环返回空数组。 */
+/**
+ * 题目：共有 courseCount 门课程，prerequisites[i]={course, prerequisite} 表示先学 prerequisite 才能学 course。
+ * 输出：返回任意一种包含全部课程的合法学习顺序；若依赖形成环、无法完成全部课程，则返回空数组。
+ * 要求：构建 prerequisite 指向 course 的有向图，使用 Kahn 拓扑排序，时间复杂度 O(V + E)。难度：★★★。
+ */
 // 完成状态：未完成
 public class CourseScheduleExercise {
     public static int[] findOrder(int courseCount, int[][] prerequisites) {

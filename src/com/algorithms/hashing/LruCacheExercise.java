@@ -5,7 +5,11 @@ import com.algorithms.support.Todo;
 import java.util.HashMap;
 import java.util.Map;
 
-/** 难度：★★★。哈希表 + 双向链表实现固定容量 LRU，get/put 均为 O(1)。 */
+/**
+ * 题目：实现固定容量的 LRU 缓存；访问或更新键后，该键成为最近使用项，容量超限时淘汰最久未使用项。
+ * 规则：get 对不存在的键返回 null；put 更新已有键或插入新键；容量必须为正数。
+ * 要求：组合哈希表和双向链表，使 get、put 的平均时间复杂度均为 O(1)。难度：★★★。
+ */
 // 完成状态：未完成
 public class LruCacheExercise<K, V> {
     private final int capacity;

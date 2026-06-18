@@ -3,7 +3,11 @@ package com.algorithms.heaps;
 import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
-/** 难度：★★☆。返回最大的 k 个数，结果按降序排列。 */
+/**
+ * 题目：给定整数数组 numbers 和整数 k，找出其中最大的 k 个数，重复值分别计数。
+ * 输出：按降序返回结果；k 为 0 返回空数组，k 小于 0 或大于数组长度时抛出 IllegalArgumentException。
+ * 要求：维护容量为 k 的小顶堆，时间复杂度 O(n log k)，额外空间 O(k)。难度：★★☆。
+ */
 // 完成状态：未完成
 public class TopKExercise {
     public static int[] largest(int[] numbers, int k) {

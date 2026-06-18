@@ -4,7 +4,11 @@ import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 import java.util.List;
 
-/** 难度：★★☆。输入元素互不相同，返回所有排列。 */
+/**
+ * 题目：给定一个元素互不相同的整数数组 numbers，生成由全部元素组成的所有排列。
+ * 输出：返回所有排列的列表；空数组应返回包含一个空排列的列表，而不是空结果。
+ * 要求：使用回溯和 used 状态，保存答案时复制当前路径。难度：★★☆。
+ */
 // 完成状态：未完成
 public class PermutationsExercise {
     public static List<List<Integer>> generate(int[] numbers) {

@@ -3,7 +3,11 @@ package com.algorithms.dp;
 import com.algorithms.support.Checks;
 import com.algorithms.support.Todo;
 
-/** 难度：★★☆。0/1 背包：每件物品最多选择一次。 */
+/**
+ * 题目：给定每件物品的重量 weights、价值 values 和背包容量 capacity，求可获得的最大总价值。
+ * 规则：每件物品最多选择一次；两数组长度必须相同，容量不得为负；容量为 0 时结果为 0。
+ * 要求：使用一维动态规划并倒序遍历容量，时间 O(物品数 × 容量)，空间 O(容量)。难度：★★☆。
+ */
 // 完成状态：未完成
 public class KnapsackExercise {
     public static int maxValue(int[] weights, int[] values, int capacity) {

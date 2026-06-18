@@ -5,7 +5,11 @@ import com.algorithms.support.Todo;
 import java.util.ArrayList;
 import java.util.List;
 
-/** 难度：★★☆。完成递归中序遍历与按层遍历。 */
+/**
+ * 题目：为一棵二叉树实现两种遍历：递归中序遍历，以及按深度分组的层序遍历。
+ * 输出：inorder 返回“左、根、右”的扁平列表；levelOrder 返回每层一个列表；空树返回空列表。
+ * 要求：每个节点只访问一次，时间复杂度 O(n)。难度：★★☆。
+ */
 // 完成状态：未完成
 public class BinaryTreeExercise {
     public static final class Node {
