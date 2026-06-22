@@ -1,6 +1,6 @@
 # 模块 1：复杂度、数组与字符串
 
-> 模块状态：未完成 (1/2 个练习已完成)
+> 模块状态：已完成 (2/2 个练习已完成)
 > 对应代码：`src/com/algorithms/arrays/`  
 > 建议顺序：`TwoSumSortedExercise.java` → `PrefixSumExercise.java`
 
@@ -10,7 +10,7 @@
 | 练习题 Java 文件 | 完成状态 |
 |---|---|
 | [`TwoSumSortedExercise.java`](../src/com/algorithms/arrays/TwoSumSortedExercise.java) | 已完成 |
-| [`PrefixSumExercise.java`](../src/com/algorithms/arrays/PrefixSumExercise.java) | 未完成 |
+| [`PrefixSumExercise.java`](../src/com/algorithms/arrays/PrefixSumExercise.java) | 已完成 |
 <!-- exercise-status:end -->
 
 ## 复杂度
